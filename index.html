@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>: )</title>
+    <style>
+      body {
+        background-color: #f5deb3;
+        font-family: "Times New Roman", serif;
+        color: #8b4513;
+      }
+      .timeline {
+        position: relative;
+        margin: 50px auto;
+        max-width: 1000px;
+      }
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 3px;
+        height: 100%;
+        border-left: 3px dotted #8b4513;
+        border-radius: 3px;
+      }
+      .timeline-item {
+        position: relative;
+        width: 300px;
+        padding: 10px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        box-sizing: border-box;
+      }
+      .timeline-item:nth-child(odd) {
+        float: left;
+        clear: both;
+        padding-right: 30px;
+        text-align: right;
+      }
+      .timeline-item:nth-child(even) {
+        float: right;
+        clear: both;
+        padding-left: 30px;
+        text-align: left;
+      }
+      .timeline-item img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transform: rotate(5deg);
+        border: 4px solid #fff;
+      }
+      .timeline-item .date {
+        font-weight: bold;
+        margin: 10px 0;
+      }
+      .timeline-item .description {
+        margin: 0;
+      }
+      .end {
+        text-align: center;
+        clear: both;
+        padding-top: 30px;
+      }
+      .end h1 {
+        /* size */
+        font-size: 100px;
+        margin-bottom: 20px;
+      }
+      .end .paragraph {
+        /* size */
+        font-size: 30px;
+        margin-bottom: 20px;
+        padding: 0 100px;
+      }
+      .end .designation,
+      .end .date {
+        margin: 0;
+        font-style: italic;
+      }
+      .start {
+        text-align: center;
+        clear: both;
+        padding-top: 30px;
+      }
+      .start h2 {
+        /* size */
+        font-size: 100px;
+        margin-bottom: 20px;
+      }
+      .start .paragraph {
+        /* size */
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      .musik {
+        /* padding */
+        display: block;
+      }
+      .boxes {
+        /* big text and boxes */
+        font-size: 30px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+      }
+      .boxes li {
+        padding: 10px 0;
+      }
+      .boxes li input {
+        /* big boxes  */
+        width: 30px;
+        height: 30px;
+      }
+      .boxes li label {
+        /* big text */
+        font-size: 30px;
+      }
+      .musik .paragraph {
+        /* size center */
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .musik iframe {
+        /* size */
+        width: 100%;
+        height: 352px;
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="start">
+      <h2>Hey! Glad you made it</h2>
+      <p class="paragraph">Make sure nobody's around, and please make sure you're using a laptop.</p>
+      <p class="paragraph">And make sure you have time, maybe come back later and feel this the way it was meant to</p>
+      <!-- create a list of checkboxes, that once all ticked trigger a function -->
+      
+      <ul class = "boxes">
+        <li><input type="checkbox" id="check1" name="check1" value="check1"> <label for="check1">Isolation, Check</label></li>
+        <li><input type="checkbox" id="check2" name="check2" value="check2"> <label for="check2">Time, Check</label></li>
+        <li><input type="checkbox" id="check3" name="check3" value="check3"> <label for="check3">On Laptop, Check</label></li>
+        <li><input type="checkbox" id="check3" name="check3" value="check3"> <label for="check3">Headphones, Check</label></li>
+      </ul>
+      
+      
+
+    </div>
+
+    <div class="musik">
+    <p class="paragraph">Alright then, put this on, and lets go</p>
+    <div class="powr-music-player" id="f5967a93_1687556342"></div><script src="https://www.powr.io/powr.js?platform=html"></script></div>
+    
+    <div class="timeline">
+      <div class="timeline-item">
+        <img src="img\20221025.jpg" alt="Photo 1" />
+        <p class="date">25/10/22</p>
+        <p class="description">
+          The day I gave it a thought, damn how pretty is sheeeee
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20221026.jpg" alt="Photo 1" />
+        <p class="date">26/10/22</p>
+        <p class="description">
+          Wo chashma thoda sa tedha tha
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20221030.jpg" alt="Photo 1" />
+        <p class="date">30/10/22</p>
+        <p class="description">
+          The day your hair looked so good, you said it was too good to be a pfp
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20221102.jpg" alt="Photo 1" />
+        <p class="date">02/11/22</p>
+        <p class="description">
+          Yes, I still have it, and Yes a sticker is already on its way
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20221109.jpg" alt="Photo 1" />
+        <p class="date">09/11/22</p>
+        <p class="description">
+          Ah november, everyday wishing my phone camera didn't suck that hard. Do you remember the squirrel,
+          Did we ever find out where it went?
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20230114.jpg" alt="Photo 1" />
+        <p class="date">14/01/23</p>
+        <p class="description">
+          Pondicherry, something was going on between us, thoda bhid gaye the shayad, but then one vcall.. and..
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20230121.jpg" alt="Photo 1" />
+        <p class="date">21/01/23</p>
+        <p class="description">
+          Cmon man, its the fucking fog night, iconic, does not need description.
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20230130.jpg" alt="Photo 1" />
+        <p class="date">30/01/23</p>
+        <p class="description">
+          The shadow pics, idk where do you get these ideas? reels? previous boyfriends? raw imagination?
+          Like legit I cannot come up with something that simple even.
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20230206.jpg" alt="Photo 1" />
+        <p class="date">06/02/23</p>
+        <p class="description">
+          Nescafe chalega? "proceeds to click a million pictures" how are you not supposed to adore that huh?????
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20230209.jpg" alt="Photo 1" />
+        <p class="date">09/02/23</p>
+        <p class="description">
+          That one time jab kese bhi aapki shakal me gazab glow up aagyi thi. Flawless skin omg...
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20230218.jpg" alt="Photo 1" />
+        <p class="date">18/02/23</p>
+        <p class="description">
+          Kaushik ye chashma pada tha idhar, 'Ye shayad mereme fit aajaye, ek min'
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20230219.jpg" alt="Photo 1" />
+        <p class="date">19/02/23</p>
+        <p class="description">
+          Randomly padhte waqt tereko kuch to bolna just to see you laugh, or make faces is something I looooveddd to do.
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20230224.jpg" alt="Photo 1" />
+        <p class="date">24/02/23</p>
+        <p class="description">
+          Ek thaila bhar ke bhajji le lete hain,
+          omg us din tu mereko haath se khila rahi thi aur civil ke londe dekh rhe the.<br>
+          It was cute
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20230227.jpg" alt="Photo 1" />
+        <p class="date">27/02/23</p>
+        <p class="description">
+          Prajwal baat nhi maanta tha so I was like, okay lemme try that tooo.... Also how could
+          you not see that in your tshirt before I pointed it out. I mean, cmon!
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20230302.jpg" alt="Photo 1" />
+        <p class="date">02/03/23</p>
+        <p class="description">
+          The 'bhajji' I want to bhar ke ghar le jaana. Kitni cute lagri hain tereko andaaza hain?
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20230304.jpg" alt="Photo 1" />
+        <p class="date">04/03/23</p>
+        <p class="description">
+          "Kaha mar gaya tu? Jaldi aaa", trust me mai already max speed pe hota hu.
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20230306.jpg" alt="Photo 1" />
+        <p class="date">06/03/23</p>
+        <p class="description">
+          If she is tired, how is she happy? does she feel the same as me, when we meet?
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20230308.jpg" alt="Photo 1" />
+        <p class="date">08/03/23</p>
+        <p class="description">
+          Boht pyaari picture hain, ek baar aur dekh loon?(omg my copilot just autocompleted in hindi)
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20230317.jpg" alt="Photo 1" />
+        <p class="date">17/03/23</p>
+        <p class="description">
+          The adorable smile, Hahah, I used to stare at you the entire time without even you knowing it.
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20230320.jpg" alt="Photo 1" />
+        <p class="date">20/03/23</p>
+        <p class="description">
+          Mereko laga tha sunkissed pictures kheechunga, ye pata nhi kya kheech liyaaa
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20230403.jpg" alt="Photo 1" />
+        <p class="date">03/04/23</p>
+        <p class="description">
+          This is the one adorable picture I wanted to show everyone without context.
+          The only drunk adventure we had. The first, maybe not the last.
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20230406.jpg" alt="Photo 1" />
+        <p class="date">06/04/23</p>
+        <p class="description">
+          Where is that crown now, idk... but I didn't throw it away, I swear, it was on my table for a long while.
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20230424.jpg" alt="Photo 1" />
+        <p class="date">24/04/23</p>
+        <p class="description">
+          DSLR to mila but I liked the phone waala pictures better. I wish we would've taken a few more.
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20230506.jpg" alt="Photo 1" />
+        <p class="date">06/05/23</p>
+        <p class="description">
+          All the time spent in reading room. and all
+          my mind immediately shifted over to was 'hours untill she goes back'
+        </p>
+      </div>
+      <div class="timeline-item">
+        <img src="img\20230509.jpg" alt="Photo 1" />
+        <p class="date">09/05/23</p>
+        <p class="description">
+          The smile, charming like always. I think it definitely has something to do with those eyes.
+          The dark deep eyes. I'll never forget those.
+        </p>
+      </div>
+    </div>
+    <div class="end">
+      <h1>Finally! You made it to the bottom!!</h1>
+      <p class="paragraph">Hiii</p>
+      <p class="paragraph">
+        Umm, I do not have much to say tbh, I was working on this compilation for a while
+        but then I got caught up in internship and stuff, so I couldn't finish it. But I am glad I finally did.
+      </p>
+      <p class="paragraph">
+        It is not a lot, but I hope you like it. I just had a few pictures lying around, and I wanted to do something with them.
+        This is not exactly what I envisioned, but eh, its alright, I guess. It takes more skill to put ideas to reality than I thought.
+      </p>
+      <p class="paragraph">
+        Also that bracelet, you must have got it by now? It's not a lot, but mereko dekh ke laga ki tujhe pasand aayega. Its just a little
+        something, idk if you already have a lot of those. But do tell me if you found it pretty.
+      </p>
+      <p class="paragraph">
+        The efforts you put into everything you do, they just always turn out into something good... they have to.... its so charming, 
+        and I am so glad to have witnessed it myself. I aspire be as charming as you are, and I am not even kidding. You are beautiful,
+        curvy, intelligent, mature, and I love it sooo soo much.
+      </p>
+      <p class="paragraph">
+        I am surprised how these letters and long texts thing blew up lately. Anyways, have a nice one srush! I hope you
+        have a great day ahead! This is Kaus, signing off once again!
+      </p>
+      <p class="designation">Kaushik Dey</p>
+      <p class="date">24/06/23</p>
+    </div>
+    <script>
+
+      const start = document.querySelector(".start");
+      const checkboxes = document.querySelectorAll("input[type=checkbox]");
+      const boxes = document.querySelector(".boxes");
+      const timeline = document.querySelector(".timeline");
+      const musik = document.querySelector(".musik");
+      const end = document.querySelector(".end");
+
+      window.addEventListener("DOMContentLoaded", function () {
+        const imageElements = document.querySelectorAll(".timeline-item img");
+
+        imageElements.forEach((img) => {
+          const rotation = Math.floor(Math.random() * 11) - 5;
+          img.style.transform = `rotate(${rotation}deg)`;
+        });
+
+        //make the timeline and end class invisible
+
+        musik.style.opacity = 0;
+        timeline.style.opacity = 0;
+        end.style.opacity = 0;
+      });
+
+      //make the timeline and end class visible when all the checkboxes are ticked
+
+
+      checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener("change", function () {
+          if (this.checked) {
+            this.parentNode.style.textDecoration = "line-through";
+          } else {
+            this.parentNode.style.textDecoration = "none";
+          }
+          if (document.querySelectorAll("input[type=checkbox]:checked").length === 4) {
+            boxes.style.opacity = 0;
+            start.style.opacity = 0;
+            timeline.style.opacity = 1;
+            end.style.opacity = 1;
+            musik.style.opacity = 1;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
